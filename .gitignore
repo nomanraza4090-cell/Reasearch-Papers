@@ -17,6 +17,7 @@ __pycache__/
 # ---------------------------------------------------------------------------
 data/raw/*
 data/processed/*
+
 data/embeddings/*
 
 vector_db/*
