@@ -1,4 +1,3 @@
-```python
 """
 ResearchMind — Premium Streamlit Interface
 ===========================================
@@ -1514,4 +1513,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-```
