@@ -1,0 +1,42 @@
+# ResearchMind — .gitignore
+
+.env
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+
+# ---------------------------------------------------------------------------
+# Generated pipeline artifacts (raw/processed data, embeddings, vector index,
+# outputs) are ignored by default since they are large and reproducible from
+# the notebooks. If your deployment target needs these artifacts committed
+# (e.g. a hosting platform with no build step to regenerate them), comment
+# out the relevant lines below rather than removing this file's git-ignore
+# behavior entirely.
+# ---------------------------------------------------------------------------
+data/raw/*
+data/processed/*
+data/embeddings/*
+
+vector_db/*
+outputs/*
+
+# Keep directory placeholders so the folder structure survives `git clone`
+# even when its contents are ignored.
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/embeddings/.gitkeep
+!vector_db/.gitkeep
+!outputs/figures/.gitkeep
+!outputs/reports/.gitkeep
+!outputs/evaluations/.gitkeep
+
+*.log
+.DS_Store
+
+# Downloaded model weights (large; re-downloaded automatically by
+# sentence-transformers on first run)
+models/embedding_model/*
+!models/embedding_model/.gitkeep
+venv/

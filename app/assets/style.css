@@ -1,0 +1,152 @@
+/* ResearchMind — professional research dashboard theme */
+
+:root {
+    --rm-bg: #f7f8fa;
+    --rm-surface: #ffffff;
+    --rm-border: #e3e6ea;
+    --rm-text: #1a1d23;
+    --rm-text-muted: #5b6472;
+    --rm-primary: #2454ff;
+    --rm-primary-dark: #173bcf;
+    --rm-accent: #0f9d78;
+    --rm-radius: 10px;
+    --rm-shadow: 0 1px 3px rgba(16, 24, 40, 0.06), 0 1px 2px rgba(16, 24, 40, 0.04);
+}
+
+.main .block-container {
+    padding-top: 2rem;
+    max-width: 1180px;
+}
+
+h1, h2, h3 {
+    font-weight: 650;
+    letter-spacing: -0.01em;
+    color: var(--rm-text);
+}
+
+/* ---------- Paper cards ---------- */
+.rm-card {
+    background: var(--rm-surface);
+    border: 1px solid var(--rm-border);
+    border-radius: var(--rm-radius);
+    box-shadow: var(--rm-shadow);
+    padding: 1.1rem 1.3rem;
+    margin-bottom: 0.9rem;
+}
+
+.rm-card-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--rm-text);
+    margin-bottom: 0.2rem;
+}
+
+.rm-card-meta {
+    font-size: 0.85rem;
+    color: var(--rm-text-muted);
+    margin-bottom: 0.5rem;
+}
+
+.rm-badge {
+    display: inline-block;
+    background: rgba(36, 84, 255, 0.08);
+    color: var(--rm-primary-dark);
+    border-radius: 999px;
+    padding: 0.15rem 0.6rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    margin-right: 0.4rem;
+}
+
+.rm-badge-accent {
+    background: rgba(15, 157, 120, 0.10);
+    color: var(--rm-accent);
+}
+
+.rm-abstract {
+    font-size: 0.92rem;
+    color: var(--rm-text);
+    line-height: 1.5;
+}
+
+/* ---------- Dashboard metric tiles ---------- */
+.rm-metric {
+    background: var(--rm-surface);
+    border: 1px solid var(--rm-border);
+    border-radius: var(--rm-radius);
+    padding: 1rem 1.2rem;
+    text-align: left;
+    box-shadow: var(--rm-shadow);
+}
+
+.rm-metric-value {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--rm-primary);
+}
+
+.rm-metric-label {
+    font-size: 0.82rem;
+    color: var(--rm-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+/* ---------- Chat bubbles ---------- */
+.rm-chat-row {
+    display: flex;
+    margin-bottom: 0.6rem;
+}
+
+.rm-chat-user {
+    justify-content: flex-end;
+}
+
+.rm-chat-assistant {
+    justify-content: flex-start;
+}
+
+.rm-bubble {
+    max-width: 75%;
+    padding: 0.65rem 0.95rem;
+    border-radius: 14px;
+    font-size: 0.93rem;
+    line-height: 1.45;
+}
+
+.rm-bubble-user {
+    background: var(--rm-primary);
+    color: white;
+    border-bottom-right-radius: 4px;
+}
+
+.rm-bubble-assistant {
+    background: var(--rm-surface);
+    border: 1px solid var(--rm-border);
+    color: var(--rm-text);
+    border-bottom-left-radius: 4px;
+}
+
+.rm-source-list {
+    font-size: 0.8rem;
+    color: var(--rm-text-muted);
+    margin-top: 0.3rem;
+    padding-left: 0.2rem;
+}
+
+/* ---------- Misc ---------- */
+.rm-section-divider {
+    border: none;
+    border-top: 1px solid var(--rm-border);
+    margin: 1.4rem 0;
+}
+
+a.rm-link {
+    color: var(--rm-primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a.rm-link:hover {
+    text-decoration: underline;
+}
